@@ -228,7 +228,7 @@ const onSubmit = (formData) => {
         </h1>
         <p className="mb-4 text-lg text-gray-600">
           Enter a detailed description about yourself to generate your
-          professional resume.
+          professional resume. it takes "3-5 mintutes" to generate resume
         </p>
         <textarea
           disabled={loading}

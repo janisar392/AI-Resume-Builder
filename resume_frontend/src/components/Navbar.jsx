@@ -37,7 +37,7 @@ function Navbar() {
           </ul>
         </div>
         <Link to={"/"} className="btn btn-ghost text-xl">
-          AI Resume Maker
+          AI Resume Builder
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -54,7 +54,10 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Login</a>
+        <a href="https://portfolio-janisar.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <button className="btn btn-outline-secondary">About me</button>
+        </a>
+
       </div>
     </div>
   );

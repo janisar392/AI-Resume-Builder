@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
+
 const LandingPage = () => {
   return (
     <div className="bg-base-100">
@@ -70,6 +71,53 @@ const LandingPage = () => {
             What Our Users Say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                {/* Testimonial 1 */}
+            <div className="card bg-base-100 shadow-xl">
+              <div className="card-body">
+                <p>
+                  "Super easy to use and very intuitive. I created a professional-looking resume in minutes without any hassle."
+                </p>
+                <div className="flex items-center mt-4">
+                  <div className="avatar">
+                    <div className="w-12 rounded-full">
+                      <img
+                        src="https://media.licdn.com/dms/image/v2/D5622AQGTK7B2jgzimw/feedshare-shrink_800/feedshare-shrink_800/0/1733588542944?e=2147483647&v=beta&t=7r4LXHzYsQcBFTmEurClKYBFIPKcOgKcdKVBLge1M6Q"
+                        alt="User"
+                      />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-bold">Janisar Akhtar</h4>
+                    <p>Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 1 */}
+            <div className="card bg-base-100 shadow-xl">
+              <div className="card-body">
+                <p>
+                  "Thanks to this AI resume builder, I finally got responses from recruiters. It highlights exactly what employers want to see."
+                </p>
+                <div className="flex items-center mt-4">
+                  <div className="avatar">
+                    <div className="w-12 rounded-full">
+                      <img
+                        src="https://media.licdn.com/dms/image/v2/D5603AQFiq5319JEyug/profile-displayphoto-shrink_800_800/B56ZXJNYN.HEAc-/0/1742837484243?e=1756339200&v=beta&t=7rHFyJjcURwgfkoYCB0Uu3-3sPGpDUet9thjXbXTRpw"
+                        alt="User"
+                      />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="font-bold">Mohd Rayyan</h4>
+                    <p>Product Soulution Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
             {/* Testimonial 1 */}
             <div className="card bg-base-100 shadow-xl">
               <div className="card-body">
@@ -130,7 +178,10 @@ const LandingPage = () => {
             Join thousands of users who have landed their dream jobs with our AI
             resume maker.
           </p>
-          <button className="btn btn-primary">Get Started Now</button>
+          
+          <Link to={"/generate-resume"} className="btn btn-primary">
+              Get Started Now
+            </Link>
         </div>
       </section>
 

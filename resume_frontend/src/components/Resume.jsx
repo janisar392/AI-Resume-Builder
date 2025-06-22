@@ -129,7 +129,7 @@ const Resume = ({ data }) => {
         <div className="divider"></div>
 
         {/* Education Section */}
-        // In Resume.jsx, update the education section to:
+        
 <section>
   <h2 className="text-2xl font-semibold text-secondary">Education</h2>
   {Array.isArray(data.education) ? (
